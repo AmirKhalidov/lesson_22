@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <title>Lesson 22</title>
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-primary-bg: #f5f7fa;
+                --color-primary-green: #4caf4f;
+                --color-primary-grey: #717171;
+                --color-secondary-grey: #4d4d4d;
+                --color-primary-black: #18191f;
+            }
+        </style>
+    </head>
+    <body style="font-family: Inter">
+        <!-- HEADER -->
+        <div class="bg-primary-bg">
+            <header
+                class="pl-[105px] pr-[120px] py-6 flex justify-between items-center max-w-[1440px] mx-auto"
+            >
+                <a href="/">
+                    <img src="./img/Logo.png" alt="logo" />
+                </a>
+
+                <nav>
+                    <ul class="flex gap-14 text-primary-black">
+                        <li>
+                            <a href="#" class="font-medium">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+                        <li>
+                            <a href="#">Feature</a>
+                        </li>
+                        <li>
+                            <a href="#">Product</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="flex gap-2 items-center">
+                    <a
+                        href="#"
+                        class="px-5 py-3 text-primary-green text-sm font-medium"
+                        >Login</a
+                    >
+                    <a
+                        href="#"
+                        class="px-5 py-3 bg-primary-green text-sm font-medium text-white rounded-md"
+                        >Sign up</a
+                    >
+                </div>
+            </header>
+
+            <!-- HERO -->
+            <section
+                class="py-24 px-36 grid grid-cols-[1fr_391px] items-center max-w-[1440px] mx-auto bg-primary-bg"
+            >
+                <div class="flex flex-col">
+                    <h1 class="mb-4 text-7xl font-semibold text-secondary-grey">
+                        Lessons and insights
+                        <span class="text-primary-green">from 8 years</span>
+                    </h1>
+                    <p class="mb-8 text-primary-grey">
+                        Where to grow your business as a photographer: site or
+                        social media?
+                    </p>
+                    <a
+                        href="#"
+                        class="px-8 py-3 bg-primary-green rounded self-start text-white"
+                        >Register</a
+                    >
+                </div>
+                <div>
+                    <img src="./img/Illustration.png" alt="hero" />
+                </div>
+            </section>
+        </div>
+
+        <!-- CLIENTS -->
+        <section
+            class="max-w-[1440px] mx-auto pt-10 pb-20 flex flex-col items-center"
+        >
+            <h2 class="mb-2 text-4xl font-semibold text-secondary-grey">
+                Our Clients
+            </h2>
+            <p class="mb-8 text-primary-grey">
+                We have been working with some Fortune 500+ clients
+            </p>
+            <ul class="flex gap-36 items-center">
+                <li>
+                    <img
+                        src="./img/Logo (12).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (13).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (14).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (15).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (16).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (17).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="./img/Logo (14).png"
+                        alt="icon"
+                        class="cursor-pointer"
+                    />
+                </li>
+            </ul>
+        </section>
+
+        <!-- FEATURES -->
+        <section
+            class="max-w-[1440px] mx-auto flex flex-col items-center pb-10"
+        >
+            <h2 class="mb-2 text-4xl font-semibold text-secondary-grey">
+                Manage your entire community in a single system
+            </h2>
+            <p class="mb-12 text-primary-grey">Who is Nextcent suitable for?</p>
+
+            <ul class="flex gap-36">
+                <li
+                    class="px-8 py-6 rounded-lg shadow-md flex flex-col items-center justify-center"
+                >
+                    <img
+                        src="./img/Icon (5).png"
+                        alt="icon"
+                        class="mb-4 w-16"
+                    />
+                    <h3
+                        class="mb-4 text-4xl font-bold text-secondary-grey text-center"
+                    >
+                        Membership Organisations
+                    </h3>
+                    <p class="text-primary-grey text-sm text-center">
+                        Our membership management software provides full
+                        automation of membership renewals and payments
+                    </p>
+                </li>
+
+                <li
+                    class="px-8 py-6 rounded-lg shadow-md flex flex-col items-center justify-center"
+                >
+                    <img
+                        src="./img/Icon (6).png"
+                        alt="icon"
+                        class="mb-4 w-16"
+                    />
+                    <h3
+                        class="mb-4 text-4xl font-bold text-secondary-grey text-center"
+                    >
+                        National Associations
+                    </h3>
+                    <p class="text-primary-grey text-sm text-center">
+                        Our membership management software provides full
+                        automation of membership renewals and payments
+                    </p>
+                </li>
+
+                <li
+                    class="px-8 py-6 rounded-lg shadow-md flex flex-col items-center justify-center"
+                >
+                    <img
+                        src="./img/Icon (7).png"
+                        alt="icon"
+                        class="mb-4 w-16"
+                    />
+                    <h3
+                        class="mb-4 text-4xl font-bold text-secondary-grey text-center"
+                    >
+                        Clubs And <br />
+                        Groups
+                    </h3>
+                    <p class="text-primary-grey text-sm text-center">
+                        Our membership management software provides full
+                        automation of membership renewals and payments
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
